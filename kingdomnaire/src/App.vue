@@ -1,11 +1,11 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import ControlPanel from './components/ControlPanel.vue';
 import TheWelcome from './components/TheWelcome.vue'
 </script>
 
 <template>
     <div class="">
-      <HelloWorld />
+      <ControlPanel/>
     </div>
   
 <main class="">

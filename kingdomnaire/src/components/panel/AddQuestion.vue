@@ -29,6 +29,7 @@
             </div>
         </div>
     </div>
+    <button class=" btn btn-success genBtn" type="button">Submit</button>
 </template>
 
 <script>
