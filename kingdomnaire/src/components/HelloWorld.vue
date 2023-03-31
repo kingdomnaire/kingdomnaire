@@ -4,7 +4,7 @@ import NavMenu from './panel/NavMenu.vue'
 </script>
 
 <template>
-  <div class=" w-100 shadow-lg p-3 mb-3 bg-info rounded colMain">
+  <div class=" w-100  shadow-lg p-3 mb-3 bg-info rounded colMain">
     <NavMenu/>
   </div>
 </template>

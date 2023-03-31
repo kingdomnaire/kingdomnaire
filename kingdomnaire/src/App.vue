@@ -4,11 +4,11 @@ import TheWelcome from './components/TheWelcome.vue'
 </script>
 
 <template>
-    <div class="mt-4">
+    <div class="">
       <HelloWorld />
     </div>
   
-<main class="mt-4 ">
+<main class="">
   <TheWelcome />
 </main>
 </template>

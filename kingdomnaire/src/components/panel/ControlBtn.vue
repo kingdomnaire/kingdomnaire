@@ -1,5 +1,5 @@
 <template>
-    <div class="BtnCl">
+    <div>
         <div class="d-grid d-md-block mb-2">
             <button class="btn btn-primary btWit" type="button">New Guest</button>
             <button class="btn btn-primary" type="button">Walk Away</button>
@@ -19,9 +19,6 @@ export default{
 </script>
 
 <style>
-.BtnCl{
-    margin-left: 10%;
-}
 
 .btWit{
     margin-right: 10px;

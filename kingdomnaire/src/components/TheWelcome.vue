@@ -4,7 +4,7 @@ import WelcomeItem from './WelcomeItem.vue'
 
 <template>
   <div >
-  <div class="myDiv shadow p-3 mb-3 bg-danger rounded  ">
+  <div class="myDiv shadow p-3 mb-2 mt-3 bg-danger rounded  ">
     <h1 class="text-light font-weight-bold">Host panel</h1>
 
   </div>
