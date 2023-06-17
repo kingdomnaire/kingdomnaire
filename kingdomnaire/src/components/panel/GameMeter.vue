@@ -1,50 +1,52 @@
 <template>
-<div class="meterDiv shadow bg-success rounded">
-    <h5>Game Meter</h5>
-    <div class="input-group input-group-sm mb-1">
-        <span class="input-group-text" id="inputGroup-sizing-sm">Correct</span>
-        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+  <div class="p-4 bg-gray-100 bg-opacity-50 rounded-md mb-1">
+    <h5 class="text-lg font-bold">Game Meter</h5>
+
+    <div class="grid grid-cols-3 sm:grid-cols-6 gap-4">
+      <div class=" items-center mt-4 sm:col-span-3">
+      <span class="mr-2 text-gray-800">Correct Ans</span>
+      <input type="number" class="w-20 px-2 py-1 border border-gray-300 rounded-md pointer-events-none">
     </div>
 
-    <div class="input-group input-group-sm mb-1">
-        <span class="input-group-text" id="inputGroup-sizing-sm">Wrong</span>
-        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+      <div class=" items-center mt-3 sm:col-span-3 -ml-40">
+        <span class="mr-2 text-gray-800">Wrong Ans</span>
+        <input type="number" class="w-20 px-2 py-1 border border-gray-300 rounded-md pointer-events-none">
+      </div>
+
+      <div class="flex items-center -mt-20 sm:col-span-3 ml-96 shadow-md">
+      <span class="mr-2 text-gray-800">Current</span>
+      <input type="text" class="w-40 px-2 py-1 border border-gray-300 rounded-md pointer-events-none">
+    </div>
     </div>
 
-    <div class="input-group input-group-sm mb-1">
-        <span class="input-group-text" id="inputGroup-sizing-sm">Current</span>
-        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+    <div class="grid grid-cols-3  sm:grid-cols-6 gap-4">
+      <div class="flex items-center mt-2 sm:col-span-3">
+      <span class="mr-2 text-gray-800">Drop</span>
+      <input type="text" class="w-40 px-2 py-1 border border-gray-300 rounded-md pointer-events-none">
     </div>
 
-    <div class="input-group input-group-sm mb-1">
-        <span class="input-group-text" id="inputGroup-sizing-sm">Drop</span>
-        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    <div class="flex items-center mt-2 sm:col-span-3 -ml-20">
+      <span class="mr-2 text-gray-800">Q-Left</span>
+      <input type="text" class="w-40 px-2 py-1 border border-gray-300 rounded-md pointer-events-none">
     </div>
 
-    <div class="input-group input-group-sm mb-1 ">
-        <span class="input-group-text" id="inputGroup-sizing-sm">Q-Left</span>
-        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+    <div class="flex items-center sm:col-span-3">
+      <GameLevel/>
     </div>
-    <div class="input-group input-group-sm mb-1">
-        <span class="input-group-text" id="inputGroup-sizing-sm">Money Level</span>
-        <input type="number" class="form-control w-25" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" value="1">
     </div>
-
-</div>
-
+  </div>
 </template>
 
+
 <script>
+import GameLevel from './GameLevel.vue';
+
 export default{
-    name: 'GameMeter',
+    name: "GameMeter",
+    components: { GameLevel }
 }
 </script>
 
-<style>
-.meterDiv{
-    float: right;
-  width: 200px;
-  padding: 10px;
-  margin-top: -350px;
-}
+<style scoped>
+
 </style>
