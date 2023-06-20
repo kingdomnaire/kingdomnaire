@@ -24,7 +24,7 @@
     <button
       class="bg-green-600 mb-1 text-gray-100 rounded hover:bg-green-700"
       type="button"
-      :class="{ 'bg-black text-gray-400': isButtonDisabled('ata') }"
+      :class="{ 'bg-gray-900 text-gray-400': isButtonDisabled('ata') }"
       @click="disableButton('ata')"
       :disabled="isButtonDisabled('ata')"
     >

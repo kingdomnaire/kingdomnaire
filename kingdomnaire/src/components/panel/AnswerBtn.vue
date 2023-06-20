@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full shadow-md">
+    <div class="w-full">
         <p class=" text-gray-100 ml-8 mt-4 pl-2">Select Players Answer</p>
         <div class="mt-4 w-1/2 ml-8 h-3/4 grid grid-cols-1 sm:grid-cols-6">
             <div class="grid w-20 col-span-2 sm:col-span-1">

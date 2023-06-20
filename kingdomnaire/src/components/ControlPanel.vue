@@ -1,8 +1,9 @@
 <template>
-  <div class="container shadow-md rounded-md mt-14 ml-40 pt-14 px-8 bg-blue-600 w-full md:w-1/2 h-full flex-wrap flex flex-col justify-center">
+  <div class="container shadow-md rounded-md mt-14 ml-40 pt-14 px-8 bg-blue-600 md:w-1/2 h-full flex-wrap flex flex-col justify-center">
     <FirstButton/>
-    <QuestionBox/>
-    <div class="grid grid-cols-3 w-full sm:grid-cols-6 gap-4">
+    <QuestionBox class="w-3/4"/>
+    <QuestionCategory  class="-mt-40"/>
+    <div class="grid grid-cols-3 w-full sm:grid-cols-6 gap-4 mt-10">
       <div class="sm:col-span-3">
         <ControlBtn/>
       </div>
@@ -24,6 +25,7 @@ import FirstButton from './panel/FirstButton.vue';
 import GameMeter from './panel/GameMeter.vue';
 import LifeLine from './panel/LifeLine.vue';
 import QuestionBox from './panel/QuestionBox.vue';
+import QuestionCategory from './panel/QuestionCategory.vue';
 
 export default{
     components: {
@@ -32,7 +34,8 @@ export default{
     AnswerBtn,
     ControlBtn,
     LifeLine,
-    GameMeter
+    GameMeter,
+    QuestionCategory
 }
 };
 

@@ -10,7 +10,7 @@
       </div>
       <button class="mx-4 bg-blue-950 h-8 text-gray-100 px-4 rounded-md hover:bg-blue-900" type="button">Generate New Question</button>
     </div>
-  </template>
+</template>
   
 
 <script>
