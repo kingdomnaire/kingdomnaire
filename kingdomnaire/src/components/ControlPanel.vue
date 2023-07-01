@@ -3,7 +3,7 @@
     <FirstButton/>
     <QuestionBox class="w-2/4"/>
     <QuestionCategory/>
-     <div class="ml-40">
+     <div class="ml-40 ">
       <QuestionTag/>
      </div>
     

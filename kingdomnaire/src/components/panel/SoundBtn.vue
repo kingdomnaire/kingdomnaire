@@ -1,7 +1,7 @@
 <template>
-    <div class="w-3/4 ">
-      <p class="text-gray-100 ml-8 text-center">Game Sound</p>
-      <div class="mt-1 w-1/2 ml-4 pb-1 h-3/4 grid grid-cols-1 gap-20 sm:grid-cols-6">
+    <div class="w-full">
+      <p class="text-gray-100 ml-8 text-center font-bold">Game Sound</p>
+      <div class="mt-1 w-full ml-4 pb-1 h-3/4 grid grid-cols-1 gap-20 sm:grid-cols-6">
         <div class="grid w-20 col-span-2 sm:col-span-1">
           <button
             class="bg-rose-900 hover:bg-rose-950 text-white mb-3 py-2 px-1 rounded-xl drop-shadow-md hover:drop-shadow-xl"

@@ -1,20 +1,21 @@
 <template>
     <div class="">
       <div class="vertical-nav bg-blue-950 text-gray-100 text-xl font-bold">
-        DashBoard
+        WHO WANT'S TO BE A RABBI
       </div>
   
      <div class="settings-nav text-gray-100">
       <nav class="horizontal-nav bg-blue-800 -ml-2">
         <p class="nav-title">DashBoard</p>
-      <router-link class="router h-10 font-bold items-center hover:bg-gray-200 hover:text-blue-900 " to="" >Control Panel</router-link>
-      <router-link class="router h-10 font-bold items-center hover:bg-gray-200 hover:text-blue-900" to="" >Add Question</router-link>
-          <p class="nav-title">Game</p>
+      <router-link class="router h-10 font-bold items-center hover:bg-gray-200 hover:text-blue-900" to="#" >Control Panel</router-link>
+      <router-link class="router h-10 font-bold items-center hover:bg-gray-200 hover:text-blue-900" to="#" >Add Question</router-link>
+      <router-link class="router h-10 font-bold items-center hover:bg-gray-200 hover:text-blue-900" to="#" >Message</router-link>
+      <router-link class="router h-10 font-bold items-center hover:bg-gray-200 hover:text-blue-900" to="#" >Fastest Finger</router-link>
+        <p class="nav-title">Game</p>
     </nav>
   
     <div class="content"><slot /></div>
      </div>
-  
       </div>
     </template>
   
