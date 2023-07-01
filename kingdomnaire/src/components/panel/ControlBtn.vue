@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-3 bg-indigo-900 w-full rounded-xl h-36 grid shadow-2xl">
+    <div class="mt-10 bg-indigo-900 w-full rounded-xl h-36 grid shadow-2xl">
       <div class="mt-4">
         <button class="mx-8 bg-blue-950 h-8 text-gray-100 px-4 rounded-md hover:bg-blue-900" type="button">New Guest</button>
         <button class="ml-12 bg-blue-950 h-8 text-gray-100 px-4 rounded-md hover:bg-blue-900" @click="playStart" type="button">Walk Away</button>

@@ -1,5 +1,6 @@
 <template>
-    <div class="">
+    <DashBoardNav>
+      <div class="">
       <div class="">
         <ControlPanel/>
       </div>
@@ -8,9 +9,12 @@
         <GuestPanel/>
       </div>
     </div>
-  </template>
+    </DashBoardNav>
+  
+</template>
   
   <script>
+  import DashBoardNav from '@/components/DashBoardNav.vue';
   import ControlPanel from '../components/ControlPanel.vue';
   //import HostPanel from '../components/HostPanel.vue';
   //import GuestPanel from '../components/GuestPanel.vue';
@@ -18,9 +22,8 @@
   export default {
     name: 'GameBoardView',
     components: {
-      ControlPanel,
-      //HostPanel,
-      //GuestPanel
-  }
+    ControlPanel,
+    DashBoardNav
+}
   }
   </script>
