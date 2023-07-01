@@ -1,10 +1,11 @@
 <template>
-  <div class="bg-gray-100 flex w-full gap-6 items-center justify-center bg-opacity-5 h-28 rounded-xl shadow-2xl relative z-[9999]">
-    <AudienceOverlay/>
-
-    <PhoneOverlay/>
-    
-    <FiftyOverlay/>
+  <div >
+    <div class="bg-green-300 w-20 h-20 flex items-center justify-center rounded-full" @click="showBanIcon()">
+      <AskAudienceIcon/>
+      <div class="overlay" v-if="showBan">
+        <BanIcon/>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -19,21 +20,20 @@
   align-items: center;
   justify-content: center;
   z-index: 10;
+  
 }
 
 </style>
 
 <script>
-import AudienceOverlay from '../icon/AudienceOverlay.vue';
-import PhoneOverlay from '../icon/PhoneOverlay.vue'
-import  FiftyOverlay from '../icon/FiftyOverlay.vue'
+import AskAudienceIcon from '../icon/AskAudienceIcon.vue'
+import BanIcon from '../icon/BanIcon.vue';
 
 export default {
   name: 'LifeLine',
   components: {
-    AudienceOverlay,
-    FiftyOverlay,
-    PhoneOverlay
+    AskAudienceIcon,
+    BanIcon
   },
   data() {
     return {

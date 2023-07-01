@@ -23,8 +23,8 @@ const routes = [
     component: GuestPageView
   },
   {
-    path: '/Game',
-    name:'Game',
+    path: '/game',
+    name:'game',
     component: GameBoardView
   }
 ];

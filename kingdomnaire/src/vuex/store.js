@@ -3,11 +3,13 @@ import { createStore } from 'vuex'
 import store from './store';
 import App from '../App.vue'
 import price from './price'
+import components from './components';
 
 // Create a new store instance.
 export default createStore({
   modules:{
     price,
+    components,
   }
 })
 

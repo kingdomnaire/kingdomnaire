@@ -12,15 +12,15 @@
   
   <script>
   import ControlPanel from '../components/ControlPanel.vue';
-  import HostPanel from '../components/HostPanel.vue';
-  import GuestPanel from '../components/GuestPanel.vue';
+  //import HostPanel from '../components/HostPanel.vue';
+  //import GuestPanel from '../components/GuestPanel.vue';
   
   export default {
     name: 'GameBoardView',
     components: {
       ControlPanel,
-      HostPanel,
-      GuestPanel
+      //HostPanel,
+      //GuestPanel
   }
   }
   </script>
