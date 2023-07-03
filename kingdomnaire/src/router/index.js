@@ -3,6 +3,8 @@ import App from '@/App.vue';
 import HostPageView from '@/views/HostPageView.vue';
 import GameBoardView from '@/views/GameBoardView.vue';
 import GuestPageView from '@/views/GuestPageView.vue';
+import AddQuestionView from '@/views/AddQuestionView.vue';
+import MessageView from '@/views/MessageView.vue';
 
 
 
@@ -23,9 +25,19 @@ const routes = [
     component: GuestPageView
   },
   {
-    path: '/game',
-    name:'game',
+    path: '/dashboard/panel',
+    name:'panel',
     component: GameBoardView
+  },
+  {
+    path: '/dashboard/question',
+    name: 'question',
+    component: AddQuestionView
+  },
+  {
+    path: '/dashboard/message',
+    name: 'message',
+    component: MessageView
   }
 ];
 

@@ -5,12 +5,22 @@
   
       <transition name="fade">
         <div v-if="showGameRule" class="modal-overlay">
-          <div class="modal-content">
+          <div class="modal-content justify-center items-center" >
             <h3 class="text-center text-xl font-bold my-4">Chat Here</h3>
             <div class="h-1/2 overflow-y-auto font-bold pb-5">
-              <div>
-                
+              <div class="items-center justify-center">
+                  <!-- Display messages here -->
+                <div v-for="(message, index) in messages" :key="index" class="mb-2 items-center justify-center">
+                    {{ message }}
+                    <span @click="removeMessage(index)" class="text-red-500 cursor-pointer ml-2">
+                      X
+                    </span>
+                </div>
               </div>
+            </div>
+            <div class="flex items-center justify-center">
+              <input v-model="newMessage" type="text" placeholder="Type your message" class="border border-blue-700 h-8 mr-2 text-blue-800 px-3">
+              <button @click="addMessage" class="px-4 py-2 bg-blue-500 text-white rounded">Send</button>
             </div>
             <button class="modal-close" @click="toggleGameRule">Close</button>
           </div>
@@ -23,16 +33,27 @@
   export default {
     name: 'GameRules',
     data() {
-      return {
-        showGameRule: false
-      };
-    },
+    return {
+      showGameRule: false,
+      newMessage: '',
+      messages: [],
+    };
+  },
     methods: {
       toggleGameRule() {
         this.showGameRule = !this.showGameRule;
+      },
+      addMessage() {
+      if (this.newMessage.trim() !== '') {
+        this.messages.push(this.newMessage);
+        this.newMessage = '';
       }
-    }
-  };
+    },
+    removeMessage(index) {
+      this.messages.splice(index, 1);
+    },
+  },
+    };
   </script>
   
   <style scoped>

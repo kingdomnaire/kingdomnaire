@@ -7,13 +7,12 @@
      <div class="settings-nav text-gray-100">
       <nav class="horizontal-nav bg-blue-800 -ml-2">
         <p class="nav-title">DashBoard</p>
-      <router-link class="router h-10 font-bold items-center hover:bg-gray-200 hover:text-blue-900" to="#" >Control Panel</router-link>
-      <router-link class="router h-10 font-bold items-center hover:bg-gray-200 hover:text-blue-900" to="#" >Add Question</router-link>
-      <router-link class="router h-10 font-bold items-center hover:bg-gray-200 hover:text-blue-900" to="#" >Message</router-link>
-      <router-link class="router h-10 font-bold items-center hover:bg-gray-200 hover:text-blue-900" to="#" >Fastest Finger</router-link>
+      <router-link class="router h-10 font-bold items-center hover:bg-gray-400 hover:text-blue-900" to="/dashboard/panel" >Control Panel</router-link>
+      <router-link class="router h-10 font-bold items-center hover:bg-gray-400 hover:text-blue-900" to="/dashboard/question" >Add Question</router-link>
+      <router-link class="router h-10 font-bold items-center hover:bg-gray-400 hover:text-blue-900" to="/dashboard/message" >Message</router-link>
+      <router-link class="router h-10 font-bold items-center hover:bg-gray-400 hover:text-blue-900" to="/dashboard/fastest" >Fastest Finger</router-link>
         <p class="nav-title">Game</p>
     </nav>
-  
     <div class="content"><slot /></div>
      </div>
       </div>
@@ -39,6 +38,10 @@
     align-items: center;
     height: 10vh;
   }
+  .router-link-active {
+  background-color: #f7fafc; /* Gray 300 */
+  color: #2b6cb0; /* Blue 700 */
+}
   .horizontal-nav{
     padding: 2%;
     height: 90vh;

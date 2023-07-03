@@ -1,5 +1,6 @@
 <template>
-  <div class="container h-[80vh] drop-shadow-md rounded-md mt-8 mr-20 float-right pt-14 px-8 bg-blue-600 md:w-5/6 flex-wrap flex flex-col justify-center">
+  <div class="container h-[80vh] drop-shadow-md rounded-md mt-8 mr-20 float-right pt-14 
+  px-8 bg-blue-600 md:w-5/6 flex-wrap flex flex-col justify-center">
     <FirstButton/>
     <QuestionBox class="w-2/4"/>
     <QuestionCategory/>
