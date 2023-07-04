@@ -75,10 +75,6 @@
 .fake-radio {
   float: right;
 }
-
-
-
-
 /* Move slides overflowed container */
 #slide1:checked ~ .images .images-inner {
   margin-left: 0;
@@ -90,14 +86,11 @@
   margin-left: -200%;
 }
 
-
-
-
 /* Color of bullets */
 #slide1:checked ~ div .fake-radio .radio-btn:nth-child(1),
 #slide2:checked ~ div .fake-radio .radio-btn:nth-child(2),
 #slide3:checked ~ div .fake-radio .radio-btn:nth-child(3) {
-  background: red;
+  background: rgb(20, 2, 122);
 }
 .radio-btn {
   width: 9px;
@@ -131,7 +124,7 @@
 /* Calculate AUTOPLAY for BULLETS */
 @keyframes bullet {
   0%, 33.32333333333334%	{
-    background: red;
+    background: rgb(4, 96, 112);
   }
   33.333333333333336%, 100% {
     background: gray;
