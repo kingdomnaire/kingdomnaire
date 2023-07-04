@@ -12,10 +12,14 @@
     <div class="images">
        <div class="images-inner">
         <div class="image-slide">
-          <div class="image bg-yellow" style="background-color:yellow;">image slide 1</div>
+          <div class="image bg-gray-100">
+            <img src="./bgp.png" class="justify-center w-56 ml-20"/>
+          </div>
         </div>
         <div class="image-slide">
-          <div class="image bg-blue" style="background-color:pink;">imager slide 2</div>
+          <div class="image bg-gray-100">
+            <img src="./mozfin.png" class="justify-center w-36 ml-28"/>
+          </div>
         </div>
         <div class="image-slide">
           <div class="image bg-red" style="background-color:orange;">image slide 3</div>
