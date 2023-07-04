@@ -7,9 +7,9 @@
           <div class="h-96 bg-indigo-700 rounded-lg bg-opacity-10 overflow-y-auto font-bold pb-5" :class="{ 'overflow-y-scroll': messages.length > 4 }">
           <div class="items-center justify-center float-right px-10">
             <!-- Display messages here -->
-            <div v-for="(message, index) in messages" :key="index" class="mb-2 items-center justify-center w-52">
+            <div v-for="(message, index) in messages" :key="index" class="mb-2 items-center justify-center w-52 bg-blue-300 rounded p-2">
               {{ message }}
-              <span @click="removeMessage(index)" class="text-red-500 cursor-pointer ml-2 hover:bg-gray-400 px-1 rounded-full">
+              <span @click="removeMessage(index)" class="text-red-500 cursor-pointer w-full ml-2 hover:bg-gray-400 px-1 rounded-full">
                 X
               </span>
             </div>

@@ -1,26 +1,30 @@
 <template>
-    <div class="mt-10">
+    <div class="mt-10 ">
       <div class="bg-gray-100 hover:bg-gray-300 text-blue-950 cursor-pointer text-bold 
       w-24 ml-40 text-center rounded" @click="toggleGameRule">Messages</div>
   
       <transition name="fade">
-        <div v-if="showGameRule" class="modal-overlay">
+        <div v-if="showGameRule" class="modal-overlay h-[80vh]">
           <div class="modal-content justify-center items-center" >
             <h3 class="text-center text-xl font-bold my-4">Chat Here</h3>
-            <div class="h-1/2 overflow-y-auto font-bold pb-5">
-              <div class="items-center justify-center">
+            <div class="w-50">
+              <div class="h-96 bg-indigo-700 rounded-lg bg-opacity-20 overflow-y-auto font-bold pb-5" :class="{ 'overflow-y-scroll': messages.length > 4 }">
+              <div class="items-center justify-center float-right px-10">
                   <!-- Display messages here -->
-                <div v-for="(message, index) in messages" :key="index" class="mb-2 items-center justify-center">
+                <div v-for="(message, index) in messages" :key="index" class="mb-2 items-center justify-center bg-blue-300 p-2 rounded">
                     {{ message }}
-                    <span @click="removeMessage(index)" class="text-red-500 cursor-pointer ml-2">
+                    <span @click="removeMessage(index)" class="text-red-500 cursor-pointer ml-2 hover:bg-gray-400 px-1 rounded-full">
                       X
                     </span>
                 </div>
               </div>
             </div>
-            <div class="flex items-center justify-center">
+            <div class="flex items-center justify-center ">
               <input v-model="newMessage" type="text" placeholder="Type your message" class="border border-blue-700 h-8 mr-2 text-blue-800 px-3">
-              <button @click="addMessage" class="px-4 py-2 bg-blue-500 text-white rounded">Send</button>
+              <div @click="addMessage" class="px-4 py-2 bg-blue-500 text-white rounded">
+                  <SendIcon/>
+                </div>
+            </div>
             </div>
             <button class="modal-close" @click="toggleGameRule">Close</button>
           </div>
@@ -30,8 +34,10 @@
   </template>
   
   <script>
+  import SendIcon from './icon/SendIcon.vue';
   export default {
     name: 'GameRules',
+    components: { SendIcon },
     data() {
     return {
       showGameRule: false,
@@ -83,6 +89,7 @@
   .modal-content {
     background-color: #fff;
     width: 60%;
+    height: 80%;
     max-width: 500px;
     padding: 1rem;
     border-radius: 4px;

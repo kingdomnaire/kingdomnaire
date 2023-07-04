@@ -2,7 +2,7 @@
     <div class="container h-[80vh] drop-shadow-md rounded-md mt-8 mr-20 pt-14 
   px-8 bg-blue-600 md:w-3/4 flex-wrap flex flex-col justify-center items-center">
   
-    <div class="-mt-24 w-3/5 max-sm:float-none max-sm:ml-0 max-sm:mt-4 max-sm:w-full max-sm:bg-blue-950
+    <div class="-mt-20 w-3/5 max-sm:float-none max-sm:ml-0 max-sm:mt-4 max-sm:w-full max-sm:bg-blue-950
       max-md:float-none max-md:mt-14 max-md:ml-8">
       <!--question box-->
         <div class="col-span-full mb-4 w-full max-sm:w-5/6 max-md:w-full max-md:ml-0 max-sm:ml-9">
@@ -59,8 +59,8 @@
         </div>
 
         <div class="w-full max-sm:float-none max-sm:ml-0 max-sm:mt-4 max-sm:w-ful
-      max-md:float-none max-md:mt-14 max-md:ml-8 justify-center items-center">
-                <h3 class="text-center -ml-28">Enter Question Category and Tag</h3>
+              max-md:float-none max-md:mt-14 max-md:ml-8 justify-center items-center">
+                <h3 class="text-center -ml-28 mt-5">Enter Question Category and Tag</h3>
             <div>
                 <div class="mt-1 items-center justify-center">
                     <input
@@ -81,8 +81,11 @@
                     placeholder="Enter question Tab"/>
                 </div>
           </div>
+          
         </div>
     </div>
+      <div class="bg-green-900 h-10 w-24 text-center text-lg font-bold hover:bg-green-700 hover:text-gray-50
+     ml-40 cursor-pointer rounded-lg mt-5 pt-1">Send</div>
   </div>
 </template>
 
