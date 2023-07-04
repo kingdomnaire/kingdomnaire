@@ -1,10 +1,8 @@
 <template>
-  <div class="bg-gray-100 flex w-full gap-6 items-center justify-center bg-opacity-5 h-28 rounded-xl shadow-2xl relative z-[9999]">
+  <div class="bg-gray-100 flex w-80 gap-6 ml-[70%] items-center justify-center bg-opacity-5 h-28 rounded-xl shadow-2xl relative z-[9999]">
     <AudienceOverlay/>
-
-    <PhoneOverlay/>
-    
     <FiftyOverlay/>
+    <PhoneOverlay/>
   </div>
 </template>
 
